@@ -3,7 +3,7 @@
 const FooterComponents: React.FC = () => {
     return (
         <div>
-            <p>© 2025 Mi Aplicación. Todos los derechos reservados.</p>
+            <p>©2025 Alex App para Samsung. Todos los derechos reservados.</p>
         </div>
     );
 };

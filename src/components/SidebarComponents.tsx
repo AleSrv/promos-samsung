@@ -11,12 +11,17 @@ const SidebarComponents: React.FC = () => {
                 </li>
                 <li>
                     <a href="#about" className="text-blue-600 hover:underline">
-                        Acerca de
+                        Promos Televisiones
                     </a>
                 </li>
                 <li>
                     <a href="#contact" className="text-blue-600 hover:underline">
-                        Contacto
+                        Promos Barras
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" className="text-blue-600 hover:underline">
+                        Promos Tarjetas ECI
                     </a>
                 </li>
             </ul>

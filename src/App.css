@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Nuevas reglas para #sidebar */
+#sidebar {
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  #sidebar {
+    display: none; /* Ocultar el menú lateral en pantallas grandes */
+  }
+}

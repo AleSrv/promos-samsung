@@ -1,19 +1,22 @@
-//src\components\MainComponents.tsx
-import { useState } from "react";
-
 const MainComponents: React.FC = () => {
-    const [count, setCount] = useState<number>(0); // Tipando el estado
+    const months = [
+        "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+        "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+    ];
 
     return (
         <div>
-            <h2 className="text-xl font-semibold mb-4">Contenido Principal</h2>
-            <p>Este es el contenido principal de la aplicación.</p>
-            <button
-                className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
-                onClick={() => setCount(count + 1)}
-            >
-                Contador: {count}
-            </button>
+            <h2 className="text-xl font-semibold mb-4">Selecciona el mes</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                {months.map((month, index) => (
+                    <button
+                        key={index}
+                        className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
+                    >
+                        {month}
+                    </button>
+                ))}
+            </div>
         </div>
     );
 };
